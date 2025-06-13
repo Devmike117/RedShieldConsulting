@@ -5,11 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Política de Privacidad</title>
   <link rel="stylesheet" href="css/style.css" />
+<style>
+    /* Estilos básicos para navbar */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding-left: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        padding: 10px;
+        margin: 0;
+      }
+
+      nav.active ul {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="navbar">
-    <div class="logo">TextEnhancer AI</div>
-    <nav>
+  <!-- Navbar -->
+  <header class="navbar" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: #111; color: white;">
+    <div class="logo" style="display: flex; align-items: center;">
+      <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+        <span style="font-size: 20px; font-weight: bold; margin-right: 10px;">RedShield Consulting</span>
+        <img src="image/logo.jpg" alt="Logo de TextEnhancer AI" style="height: 50px;">
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <nav id="nav">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="politicas.html">Políticas</a></li>
