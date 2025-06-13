@@ -377,3 +377,28 @@ body {
     color: #FFB700;
   }
 }
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.social-icons svg {
+  width: 36px;
+  height: 36px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  fill: #aaa;
+}
+
+.social-icons a:hover svg {
+  opacity: 1;
+  transform: scale(1.15);
+  fill: #fff;
+}
