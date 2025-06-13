@@ -64,11 +64,11 @@ body {
   text-align: center;
 }
 
-.hero-content {
+/*.hero-content {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 10px;
-}
+}*/
 
 .hero h1 {
   font-size: 3rem;
